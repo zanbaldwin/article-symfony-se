@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-0": {
+            "AppKernel": "app/"
+        },
+        "psr-4": {
+            "AppBundle\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/framework-bundle": "~2.7",
+        "vlucas/phpdotenv": "~2.1"
+    }
+}
