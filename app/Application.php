@@ -8,6 +8,7 @@ use Symfony\Component\Routing\RouteCollectionBuilder;
 class Application extends Kernel
 {
     use MicroKernelTrait;
+    use KernelDirectoryStructureTrait;
 
     public function registerBundles()
     {
