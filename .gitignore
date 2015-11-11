@@ -1,0 +1,5 @@
+/var/
+/vendor/
+/app/.env
+/composer.lock
+/composer.phar

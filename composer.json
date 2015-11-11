@@ -1,0 +1,16 @@
+{
+    "autoload": {
+        "psr-0": {
+            "Application": "app/"
+        },
+        "psr-4": {
+            "AppBundle\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/framework-bundle": "~2.8",
+        "vlucas/phpdotenv": "~2.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
