@@ -1,7 +1,8 @@
 {
     "autoload": {
         "psr-0": {
-            "Application": "app/"
+            "Application": "app/",
+            "KernelDirectoryStructureTrait": "app/"
         },
         "psr-4": {
             "AppBundle\\": "src/"
