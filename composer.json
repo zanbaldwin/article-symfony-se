@@ -1,14 +1,18 @@
 {
     "autoload": {
         "psr-0": {
-            "Application": "app/"
+            "Application": "app/",
+            "KernelDirectoryStructureTrait": "app/"
         },
         "psr-4": {
             "AppBundle\\": "src/"
         }
     },
     "require": {
-        "symfony/framework-bundle": "~2.8",
+        "symfony/symfony": "~2.8",
+        "symfony/monolog-bundle": "~2.8",
+        "doctrine/doctrine-bundle": "~1.6",
+        "doctrine/orm": "~2.5",
         "vlucas/phpdotenv": "~2.1"
     },
     "minimum-stability": "dev",

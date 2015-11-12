@@ -1,0 +1,30 @@
+framework:
+    translator: ~
+    templating:
+        engines: twig
+    profiler:
+        enabled: %kernel.debug%
+
+web_profiler:
+    toolbar: %kernel.debug%
+
+doctrine:
+    dbal:
+        driver: pdo_mysql
+        host: %database.host%
+        port: %database.port%
+        dbname: %database.name%
+        user: %database.user%
+        password: %database.password%
+        charset: UTF8
+    orm:
+        auto_generate_proxy_classes: %kernel.debug%
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+
+monolog:
+    handlers:
+        main:
+            type: stream
+            path: %kernel.logs_dir%/%kernel.environment%.log
+            level: debug

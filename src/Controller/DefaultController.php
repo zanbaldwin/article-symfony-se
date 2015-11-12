@@ -1,12 +1,13 @@
 <?php
 namespace AppBundle\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
-class DefaultController
+class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return new Response('Hello, World!', 200);
+        return $this->render('AppBundle:Default:index.html.twig', []);
     }
 }
