@@ -1,4 +1,6 @@
 <?php
+namespace Application;
+
 trait KernelDirectoryStructureTrait
 {
     public function getRootDir()

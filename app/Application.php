@@ -1,4 +1,6 @@
 <?php
+namespace Application;
+
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -13,8 +15,8 @@ class Application extends Kernel
     public function registerBundles()
     {
         return [
-            new Symfony\Bundle\FrameworkBundle\FrameworkBundle,
-            new AppBundle\AppBundle,
+            new \Symfony\Bundle\FrameworkBundle\FrameworkBundle,
+            new \AppBundle\AppBundle,
         ];
     }
 

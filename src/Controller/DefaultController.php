@@ -7,6 +7,6 @@ class DefaultController
 {
     public function indexAction()
     {
-        return new Response('Hello, World!', 200);
+        return new Response('Hello, World!');
     }
 }
